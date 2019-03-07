@@ -13,3 +13,20 @@ def key_for_min_value(hash)
   end 
 end
 end
+
+my $min;
+    while (my ($key, $value) = each hash) {
+        if (not defined $min) {
+            $min = $key;
+            next;
+        }
+        if ($hash{$min} > $value) {
+            $min = $key;
+        }
+    }
+    return $min;
+}
+ 
+my $least = min(value);
+ 
+puts key
