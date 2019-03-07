@@ -2,7 +2,9 @@
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(hash)
-  hash.each_value do |a, b|
+  least_value = nil 
+  least_key = nil
+  hash.each do |a, b|
     if a == b
     0
   elsif a < b
@@ -14,22 +16,3 @@ def key_for_min_value(hash)
 end
 end
 
-my $min;
-    while (my ($key, $value) = each hash) {
-        if (not defined $min) {
-            $min = $key;
-            next;
-        }
-        if ($hash{$min} > $value) {
-            $min = $key;
-        }
-    }
-    return $min;
-}
- 
-my $least = min(value);
- 
-puts key
-
-end
-end
