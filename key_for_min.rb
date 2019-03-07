@@ -3,12 +3,12 @@
 
 def key_for_min_value(hash)
   hash.each_value |a, b|
-     if a == b
+    if a == b
     0
   elsif a < b
     -1
   elsif a > b
     1
   puts key
-end
+end 
 end
