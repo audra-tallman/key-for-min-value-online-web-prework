@@ -8,14 +8,7 @@ def key_for_min_value(hash)
     if least_value == nil || b < least_value
         least_value = b
         least_key = a
- 
-
-
-if lowest_value == nil || v < lowest_value
-      lowest_value = v
-      lowest_key = k
-  puts key
-  end 
+    end
+  end
+  least_key
 end
-end
-
