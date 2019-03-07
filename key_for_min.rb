@@ -10,5 +10,6 @@ def key_for_min_value(hash)
   elsif a > b
     1
   puts key
-end 
+  end 
+end
 end
